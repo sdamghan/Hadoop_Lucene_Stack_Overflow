@@ -12,7 +12,7 @@ public class Tester {
 
     public Tester( BufferedWriter bufferedWriter ) throws IOException 
     {
-		System.out.println("*** [INFO] Tester IS RUNNING.");
+		System.out.println("*** [INFO] TESTER IS RUNNING.");
 		searcher =  new Searcher( bufferedWriter );
     }
 
@@ -37,7 +37,7 @@ public class Tester {
     public ArrayList<String> searchQuestionBodyByTerm(String input) throws IOException, ParseException {
 
         searcher.searchQuestionBodyByTerm(input);
-        System.out.println("*** [INFO] Tester IS DONE.");
+        System.out.println("*** [INFO] TESTER IS DONE.");
         return null;
     }
 

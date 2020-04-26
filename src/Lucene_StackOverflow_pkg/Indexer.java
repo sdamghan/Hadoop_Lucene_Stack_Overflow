@@ -24,7 +24,7 @@ import java.io.IOException;
 public class Indexer {
     public Indexer() throws IOException 
     {
-		System.out.println("*** [INFO] Indexer IS RUNNING.");
+		System.out.println("*** [INFO] INDEXER IS RUNNING.");
     }
     public Directory directory = new SimpleFSDirectory(new File ("/home/casauser/Lucene_Hadoop_Stack_Overflow/Outputs/LuceneOutput"));
     public Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
@@ -34,7 +34,7 @@ public class Indexer {
 
     public void createIndex(String fileNameToBeIndex) throws IOException {
 
-        System.out.println("Indexing.......");
+//        System.out.println("Indexing.......");
         BufferedReader br = new BufferedReader(new FileReader(fileNameToBeIndex));
         String sCurrentLine =  br.readLine();
         
@@ -42,7 +42,7 @@ public class Indexer {
         int count = 0;
        do {
         	
-    	   System.out.println(count);
+//    	   System.out.println(count);
            Document doc = new Document();
            
         	/*
@@ -55,7 +55,7 @@ public class Indexer {
             
             String id = splittedLine[0];
             String creationdate = splittedLine[1];
-            System.out.println("creation Date : " + creationdate);
+//            System.out.println("creation Date : " + creationdate);
             String tags = splittedLine[2];
             String body = splittedLine[3];
             

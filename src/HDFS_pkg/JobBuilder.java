@@ -18,7 +18,7 @@ import org.apache.hadoop.util.*;
 
 
 
-public class JobBuilder extends Configured implements Tool {
+public class JobBuilder {
   
   public static class KeyPartitioner extends Partitioner<TextPair, Text> {
     @Override
